@@ -1,0 +1,16 @@
+{
+    "name": "@flowcircuits/wasmles",
+    "version": "0.1.0",
+    "private": true,
+    "license": "UNLICENSED",
+    "main": "pkg/wasm.js",
+    "typings": "pkg/wasm.d.ts",
+    "author": "FLOW CIRCUITS LLC",
+    "engines": {
+        "node": "18"
+    },
+    "scripts": {
+        "build": "wasm-pack build --target web",
+        "test": "cargo test -- --nocapture"
+    }
+}
