@@ -21,9 +21,9 @@ interface LinearEquation {
 }
 
 const linearEquations: LinearEquation[] = [
-    { variables: { a: 2, b: 3, c: -1 }, constant: 5 },
+    { variables: { a: 2, b: 8, c: -1 }, constant: 6 },
     { variables: { a: 1, b: -4, c: 2 }, constant: -6 },
-    { variables: { a: 3, b: 2, c: 1 }, constant: 9 },
+    { variables: { a: 4, b: 2, c: 1 }, constant: 10 },
 ];
 
 wasmInit().then(() => {
@@ -31,9 +31,9 @@ wasmInit().then(() => {
     const solution = Object.fromEntries(solutionMap);
     console.log(solution);
     // {
-    //     a: 2,
-    //     b: 1,
-    //     c: 3,
+    //     a: 6,
+    //     b: -2,
+    //     c: -10,
     // }
 });
 ```
