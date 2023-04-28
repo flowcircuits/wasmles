@@ -1,13 +1,13 @@
 {
     "name": "@flowcircuits/wasmles",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "main": "pkg/wasmles.js",
     "typings": "pkg/wasmles.d.ts",
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
     "scripts": {
-        "build": "wasm-pack build --target web",
+        "build": "wasm-pack build --target web --scope flowcircuits",
         "test": "cargo test -- --nocapture"
     }
 }

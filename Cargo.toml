@@ -1,7 +1,8 @@
 [package]
 name = "wasmles"
-version = "0.1.1"
+version = "1.0.0"
 authors = ["Andrew Krippner <andrew@flowcircuits.com>"]
+license = "MIT"
 edition = "2018"
 description = "WASM Linear Equation Solver"
 repository = "https://www.github.com/flowcircuits/wasmles"
