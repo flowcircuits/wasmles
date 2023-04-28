@@ -4,28 +4,16 @@
 
 An easy to use Web Assembly linear equation solver built with Rust
 
-### Install
+## Installation
 
 ```bash
 yarn add @flowcircuits/wasmles
 ```
 
-### Build
-
-```bash
-yarn build
-```
-
-### Test
-
-```bash
-yarn test
-```
-
-### Example Usage
+## Usage
 
 ```ts
-import wasmInit, { solveLinearEquations } from "@flowcircuits/wasm";
+import wasmInit, { solveLinearEquations } from "@flowcircuits/wasmles";
 
 interface LinearEquation {
     constant: number;
@@ -48,4 +36,18 @@ wasmInit().then(() => {
     //     c: 3,
     // }
 });
+```
+
+## Development
+
+#### Build
+
+```bash
+yarn build
+```
+
+#### Test
+
+```bash
+yarn test
 ```

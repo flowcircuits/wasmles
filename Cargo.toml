@@ -1,6 +1,6 @@
 [package]
-name = "wasm"
-version = "0.1.0"
+name = "wasmles"
+version = "0.1.1"
 authors = ["Andrew Krippner <andrew@flowcircuits.com>"]
 edition = "2018"
 description = "WASM Linear Equation Solver"

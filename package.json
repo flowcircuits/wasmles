@@ -1,8 +1,9 @@
 {
     "name": "@flowcircuits/wasmles",
-    "version": "0.1.0",
-    "main": "pkg/wasm.js",
-    "typings": "pkg/wasm.d.ts",
+    "version": "0.1.1",
+    "main": "pkg/wasmles.js",
+    "typings": "pkg/wasmles.d.ts",
+    "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
     "scripts": {
