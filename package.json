@@ -1,13 +1,16 @@
 {
     "name": "@flowcircuits/wasmles",
     "version": "1.0.0",
-    "main": "pkg/wasmles.js",
     "typings": "pkg/wasmles.d.ts",
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
+    "exports": {
+      "./web": "./web/wasmles.js",
+      "./node": "./node/wasmles.js"
+    },
     "scripts": {
-        "build": "wasm-pack build --target web --scope flowcircuits",
+        "build": "wasm-pack build --target web --scope flowcircuits --out-dir web && wasm-pack build --target nodejs --scope flowcircuits --out-dir node",
         "test": "cargo test -- --nocapture"
     }
 }

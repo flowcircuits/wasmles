@@ -2,6 +2,7 @@
 /target
 **/*.rs.bk
 Cargo.lock
+.DS_Store
 bin/
 pkg/
 wasm-pack.log
