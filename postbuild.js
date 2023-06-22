@@ -16,4 +16,4 @@ fs.writeFileSync(
 );
 
 // package the types
-fs.writeFileSync("./pkg/types.d.ts", fs.readFileSync("./resources/types.d.ts"));
+fs.writeFileSync("./pkg/index.d.ts", fs.readFileSync("./resources/index.d.ts"));
