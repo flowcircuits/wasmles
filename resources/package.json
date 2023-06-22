@@ -1,16 +1,42 @@
 {
     "name": "@flowcircuits/wasmles",
+    "version": "VERSION",
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
-    "typings": "./index.d.ts",
-    "main": "node/wasmles.js",
-    "browser": "browser/wasmles.js",
+    "type": "module",
     "files": [
-        "*/wasmles_bg.wasm",
-        "*/wasmles.js",
-        "types.d.ts"
+        "*/.wasm",
+        "*/.js",
+        "*/**/.d.ts"
     ],
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./index.js"
+        },
+        "./browser": {
+            "types": "./browser/index.d.ts",
+            "default": "./browser/index.js"
+        },
+        "./node": {
+            "types": "./node/index.d.ts",
+            "default": "./node/index.js"
+        }
+    },
+    "typesVersions": {
+        ">4.0": {
+            ".": [
+                "./index.d.ts"
+            ],
+            "browser": [
+                "./browser/index.d.ts"
+            ],
+            "node": [
+                "./node/index.d.ts"
+            ]
+        }
+    },
     "sideEffects": [
         "./browser/snippets/*"
     ]
