@@ -1,0 +1,17 @@
+{
+	"name": "@flowcircuits/wasmles",
+	"license": "MIT",
+	"author": "FLOW CIRCUITS LLC",
+	"repository": "https://github.com/flowcircuits/wasmles",
+	"typings": "./types.d.ts",
+	"main": "node/wasmles.js",
+	"browser": "web/wasmles.js",
+	"files": [
+		"*/wasmles_bg.wasm",
+		"*/wasmles.js",
+		"types.d.ts"
+  ],
+  "sideEffects": [
+	  "./web/snippets/*"
+	]
+}
