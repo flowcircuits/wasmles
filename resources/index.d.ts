@@ -5,9 +5,6 @@ export interface LinearEquation<
     variables: Variables;
 }
 
-// declare module "@flowcircuits/wasmles" {
-// }
-
 declare module "@flowcircuits/wasmles/node" {
     export function solveLinearEquations<T>(
         equations_value: import("@flowcircuits/wasmles").LinearEquation<T>[]
