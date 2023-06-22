@@ -1,16 +1,16 @@
 name: Build and Test
 on:
-  push:
-    branches:
-      - master
-  workflow_dispatch:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
 jobs:
-  build_and_test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Use Rust Cache
-        uses: Swatinem/rust-cache@v2
-      - name: Install & Build & Test
-        run: yarn install && yarn build && yarn test
+    build_and_test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            - name: Use Rust Cache
+              uses: Swatinem/rust-cache@v2
+            - name: Install & Build & Test
+              run: yarn install && yarn build && yarn test
