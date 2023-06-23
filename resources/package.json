@@ -6,9 +6,9 @@
     "repository": "https://github.com/flowcircuits/wasmles",
     "type": "module",
     "files": [
-        "*/.wasm",
-        "*/.js",
-        "*/**/.d.ts"
+        "*/*.wasm",
+        "*/*.js",
+        "*/**/*.d.ts"
     ],
     "exports": {
         ".": {
