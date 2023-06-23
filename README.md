@@ -15,10 +15,8 @@ yarn add @flowcircuits/wasmles
 #### Browser
 
 ```ts
-import wasmInit, {
-    solveLinearEquations,
-    LinearEquation,
-} from "@flowcircuits/wasmles/browser";
+import { LinearEquation } from "@flowcircuits/wasmles";
+import wasmInit, { solveLinearEquations } from "@flowcircuits/wasmles/browser";
 
 const linearEquations: LinearEquation[] = [
     { variables: { a: 2, b: 8, c: -1 }, constant: 6 },
@@ -41,10 +39,8 @@ wasmInit().then(() => {
 #### Node
 
 ```ts
-import {
-    solveLinearEquations,
-    LinearEquation,
-} from "@flowcircuits/wasmles/node";
+import { LinearEquation } from "@flowcircuits/wasmles";
+import { solveLinearEquations } from "@flowcircuits/wasmles/node";
 
 const linearEquations: LinearEquation[] = [
     { variables: { a: 2, b: 8, c: -1 }, constant: 6 },
