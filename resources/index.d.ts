@@ -1,6 +1,4 @@
-export interface LinearEquation<
-    Variables extends Record<string, number> = Record<string, number>
-> {
+export interface LinearEquation {
     constant: number;
-    variables: Variables;
+    variables: Record<string, number>;
 }
