@@ -1,6 +1,6 @@
 {
     "name": "@flowcircuits/wasmles",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
@@ -11,7 +11,7 @@
         "test": "cargo test -- --nocapture"
     },
     "devDependencies": {
-        "wasm-pack": "^0.12.0"
+        "wasm-pack": "0.12.0"
     },
     "dependencies": {}
 }
