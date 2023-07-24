@@ -4,7 +4,6 @@
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
-    "type": "module",
     "files": [
         "*/*.wasm",
         "*/*.js",

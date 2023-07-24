@@ -1,13 +1,13 @@
 {
     "name": "@flowcircuits/wasmles",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": "MIT",
     "author": "FLOW CIRCUITS LLC",
     "repository": "https://github.com/flowcircuits/wasmles",
     "scripts": {
         "build": "yarn run pack --target web --out-dir pkg/browser && yarn run pack --target nodejs --out-dir pkg/node",
         "postbuild": "node postbuild.js",
-        "pack": "wasm-pack build --no-pack --no-typescript --out-name index",
+        "pack": "wasm-pack build --no-typescript --out-name index",
         "test": "cargo test -- --nocapture"
     },
     "devDependencies": {
