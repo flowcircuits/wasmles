@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "setup": "./setup.sh",
+        "run": "yarn build"
+    }
+}
